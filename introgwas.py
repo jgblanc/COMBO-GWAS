@@ -5,7 +5,7 @@ from scipy.stats import linregress
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from time import time
+#from time import time
 from math import floor, log10, inf
 
 number_of_SNPs = 5
@@ -20,7 +20,7 @@ def simulate_genotypes(number_of_people=1,randomseed=None):
     probabilities = allele_frequencies()
     #set the random seed
     if randomseed is None:
-        np.random.seed(np.int64(time()))
+        np.random.seed(1)
     else:
         np.random.seed(randomseed)
     #generate genotypes
@@ -34,7 +34,7 @@ def true_effect_sizes():
 
 def simulate_LDL_levels(genotypes, standard_deviation=15,randomseed=None):
     if randomseed is None:
-        np.random.seed(np.int64(time()))
+        np.random.seed(1)
     else:
         np.random.seed(randomseed)
     #cast to an arary so that this works with list or array input
