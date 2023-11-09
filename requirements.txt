@@ -3,4 +3,4 @@ pandas
 numpy
 scipy
 seaborn==0.13.0
-math
+math=3.9.0
