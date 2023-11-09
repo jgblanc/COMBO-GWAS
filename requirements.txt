@@ -1,7 +1,6 @@
-python==3.9 
 matplotlib
 pandas
 numpy
 scipy
-seaborn
+seaborn==0.13.0
 math
